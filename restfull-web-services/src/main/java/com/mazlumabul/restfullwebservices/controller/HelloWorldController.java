@@ -3,6 +3,7 @@ package com.mazlumabul.restfullwebservices.controller;
 import com.mazlumabul.restfullwebservices.model.HelloWorldBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
+import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -36,10 +37,10 @@ public class HelloWorldController {
     }
 
     @GetMapping(path = "/hello-worldInternationalization")
-    public String helloWorldInternationalization(@RequestHeader(name = "Accept-Language",required = false)Locale locale){
+    public String helloWorldInternationalization(){
         // en = helloWorld
         // nl = Goede Morgen
         // fr = Bonjour
-        return messageSource.getMessage("good.morning.message",null,"default Message",locale);
+        return messageSource.getMessage("good.morning.message",null,"default Message", LocaleContextHolder.getLocale());
     }
 }
