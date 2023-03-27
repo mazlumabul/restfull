@@ -33,30 +33,5 @@ public class HelloWorldController {
         return new HelloWorldBean(String.format("Hello Ferhat, %s", name));
     }
 
-    @RestController
-    public static class UserController {
-        //retrieveAllUsers
-        //retrieveUser{id}
-        @Autowired
-        private UserDaoService userService;
 
-        @GetMapping("/users")
-        public List<User> retrieveAllUsers(){
-             return userService.findAll();
-        }
-
-        @GetMapping("/users/{id}")
-        public User retrieveUser(@PathVariable int id){
-            User user = userService.findUser(id);
-            if (user == null){
-                throw new UserNotFoundException("id :"+ id);
-            }
-            return user;
-        }
-
-        @PostMapping("/users")
-        public User createUser(@RequestBody User user){
-            return userService.saveUser(user);
-        }
-    }
 }

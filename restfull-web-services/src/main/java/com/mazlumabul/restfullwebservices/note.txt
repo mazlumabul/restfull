@@ -13,3 +13,33 @@ Http'yi en iyi şekilde kullanarak client-server arasında iletişim kurulmasın
 
 // Validation
 
+@Null – Null olur.
+@NotNull – Null olamaz.
+@Pattern – Yazılan RegEx patern doğruluğu
+@NotEmpty – Null ya da empty olamaz.
+@NonBlank – Whitespace ya da null olamaz.
+@Email – Email formatını doğrular
+@AssertTrue – Değer doğru
+@AssertFalse – Değer yanlış
+@Min – Büyük veya eşit
+@Max – Küçük veya eşit
+@Negative – Negatif zorunlu.
+@NegativeOrZero – 0 ya da negatif zorunlu
+@Positive – Pozitif zorunlu
+@PositiveOrZero – 0 ya da pozitif.
+@Size – size’ın verilen aralıkta olmalı.
+@Past – Geçmiş tarih olmalıdır.
+@PastOrPresent – Geçmiş tarih ya da şimdiki bir tarih olmalıdır.
+@Future – Gelecek tarih olmalıdır.
+@FutureOrPresent – Gelecek tarih ya da şimdiki tarih olmalıdır.
+@CreditCardNumber – Kredi kartı formatı
+@Currency – Değer kontrolü
+@EAN – EAN format
+@ISBN – ISBN format
+@Length – Verilen uzunlukta olmalıdır.
+
+// HATEOAS
+Rest işlemlerinde kullanımı ve dökümante edilmesini sağlayan Hypermedia As The Engine Of Application State.
+Bir rest servisinin response üzerinden tüm içerik bilgilerini görebildiğimiz başka bir kaynağa ya da dökümana gerek kalmadan kullanabilmeye olanak sağlayan bir araçtır.
+Örnek verecek olursam bir kişinin kaydını getirmek için rest üzerinden gelen cevabın içerisinde o restin diğer yapabileceği tüm yeteneklerinde görülebileceği bir yapı sağlamaktadır.
+Projemizde başka Rest işlemleri eklediysek silme, güncelleme gibi işlemleri yapabilmek için hangi rest yolunun kullanılması gerektiği gibi bilgileri görüntüler.
