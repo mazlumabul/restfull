@@ -1,16 +1,18 @@
 package com.mazlumabul.restfullwebservices.controller;
 
 import com.mazlumabul.restfullwebservices.model.HelloWorldBean;
-import com.mazlumabul.restfullwebservices.model.User;
-import com.mazlumabul.restfullwebservices.service.UserDaoService;
-import com.mazlumabul.restfullwebservices.exception.UserNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.MessageSource;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+
+import java.util.Locale;
 
 @RestController
 public class HelloWorldController {
+    @Autowired
+    private MessageSource messageSource;
+
 /*
     @RequestMapping(method = RequestMethod.GET, path = "/hello-world")
     public String helloWorld(){
@@ -33,5 +35,11 @@ public class HelloWorldController {
         return new HelloWorldBean(String.format("Hello Ferhat, %s", name));
     }
 
-
+    @GetMapping(path = "/hello-worldInternationalization")
+    public String helloWorldInternationalization(@RequestHeader(name = "Accept-Language",required = false)Locale locale){
+        // en = helloWorld
+        // nl = Goede Morgen
+        // fr = Bonjour
+        return messageSource.getMessage("good.morning.message",null,"default Message",locale);
+    }
 }

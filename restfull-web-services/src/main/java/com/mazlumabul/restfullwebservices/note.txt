@@ -43,3 +43,8 @@ Rest işlemlerinde kullanımı ve dökümante edilmesini sağlayan Hypermedia As
 Bir rest servisinin response üzerinden tüm içerik bilgilerini görebildiğimiz başka bir kaynağa ya da dökümana gerek kalmadan kullanabilmeye olanak sağlayan bir araçtır.
 Örnek verecek olursam bir kişinin kaydını getirmek için rest üzerinden gelen cevabın içerisinde o restin diğer yapabileceği tüm yeteneklerinde görülebileceği bir yapı sağlamaktadır.
 Projemizde başka Rest işlemleri eklediysek silme, güncelleme gibi işlemleri yapabilmek için hangi rest yolunun kullanılması gerektiği gibi bilgileri görüntüler.
+
+Bilgileri istek yapana gözükerek dökümantasyonu oluşmaktadır.
+
+//  Internationalization Implementasyonu
+
