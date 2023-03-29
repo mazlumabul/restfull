@@ -46,5 +46,7 @@ Projemizde başka Rest işlemleri eklediysek silme, güncelleme gibi işlemleri 
 
 Bilgileri istek yapana gözükerek dökümantasyonu oluşmaktadır.
 
-//  Internationalization Implementasyonu
-
+// XML için Content Negotitation Implementasyonu
+gelen response ( xml, json vs) karar vermemizi sağlar
+Header -> Key Accept   Value application/xml
+Amacı, aynı URI ile farklı döküman türlerinde içerik sunabilmektir
