@@ -50,3 +50,6 @@ Bilgileri istek yapana gözükerek dökümantasyonu oluşmaktadır.
 gelen response ( xml, json vs) karar vermemizi sağlar
 Header -> Key Accept   Value application/xml
 Amacı, aynı URI ile farklı döküman türlerinde içerik sunabilmektir
+
+// Open API ve Swagger UI'a Giriş
+// http://host/swagger-ui/index.html
