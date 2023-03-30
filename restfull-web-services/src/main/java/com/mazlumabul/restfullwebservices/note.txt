@@ -53,3 +53,8 @@ Amacı, aynı URI ile farklı döküman türlerinde içerik sunabilmektir
 
 // Open API ve Swagger UI'a Giriş
 // http://host/swagger-ui/index.html
+
+// Actuator
+
+https://blog.burakkutbay.com/spring-boot-actuator-nedir-kullanimi.html/
+
