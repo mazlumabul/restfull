@@ -58,3 +58,13 @@ Amacı, aynı URI ile farklı döküman türlerinde içerik sunabilmektir
 
 https://blog.burakkutbay.com/spring-boot-actuator-nedir-kullanimi.html/
 
+// Statik Filtreleme Yöntemleri
+
+forexapmle , clientin id'yi görmesini istemiyorum
+ilgi değişkene @JsonIgnore ile saklarız
+
+veya
+ilgili clasın üstüne
+@JsonIgnoreProperties(value = "field1")
+
+
