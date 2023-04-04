@@ -1,14 +1,15 @@
 package com.mazlumabul.restfullwebservices.model;
 
 
+import com.fasterxml.jackson.annotation.JsonFilter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-
+@JsonFilter("SomeBeanFilter")
 public class SomeBean {
     private String field1;
 
-    @JsonIgnore
+
     private String field2;
     private String field3;
 

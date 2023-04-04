@@ -67,4 +67,6 @@ veya
 ilgili clasın üstüne
 @JsonIgnoreProperties(value = "field1")
 
+// Dinamik Filtreleme
+
 
