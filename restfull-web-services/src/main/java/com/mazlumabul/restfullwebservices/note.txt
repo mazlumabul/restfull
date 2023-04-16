@@ -69,4 +69,6 @@ ilgili clasın üstüne
 
 // Dinamik Filtreleme
 
+//Authentication Tasarımı
+
 
